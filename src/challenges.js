@@ -1,7 +1,13 @@
-// Desafio 1 vqv
-function compareTrue() {
+// Desafio 1 
+function compareTrue(paramet1, paramet2) {
   // seu código aqui
+if(paramet1 === true && paramet2 === true){
+  return true;
+}else{
+  return false;
 }
+}
+
 
 // Desafio 2
 function calcArea() {
