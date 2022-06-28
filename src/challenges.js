@@ -103,13 +103,22 @@ console.log(fizzBuzz([2, 15, 7, 9, 45]));
 console.log(fizzBuzz([7, 9]));
 console.log(fizzBuzz([9, 25]));
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(text) {
+  let codifica = text.replace(/a/g, "1").replace(/e/g, "2").replace(/i/g, "3").replace(/o/g, "4").replace(/u/g, "5");
+  return codifica;
 }
-function decode() {
-  // seu código aqui
+console.log(encode('hello'));
+console.log(encode('How are you today?'));
+console.log(encode('This is an encoding test'));
+console.log(encode('go Trybe!'));
+function decode(text2) {
+  let decodifica = text2.replace(/1/g, "a").replace(/2/g, "e").replace(/3/g, "i").replace(/4/g, "o").replace(/5/g, "u");
+  return decodifica; 
 }
-
+console.log(encode('h2ll4'));
+console.log(encode('H4w 1r2 yo5 tod1y?'));
+console.log(encode('Th3s is 1n 2nc4ding t2st'));
+console.log(encode('g4 Tryb2!'));
 // Desafio 10
 function techList() {
   // seu código aqui
