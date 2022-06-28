@@ -45,14 +45,23 @@ console.log(footballPoints(14, 8));
 console.log(footballPoints(1, 2));
 console.log(footballPoints(0, 0));
 // Desafio 6
-function highestCount(parametro) {
-  let array = parametro;
-  let maiorNum = array[0];
-  
- 
-  console.log(maiorNum);
+function highestCount(array) {
+  let maiorNum = null;
+  for(let index of array) {
+    if (maiorNum === null) {
+     maiorNum = index;
+    } else if (index > maiorNum) {
+      maiorNum = index;
+    }
+  }
+  let repetNum = 0;
+  for(let index = 0; index < array.length; index += 1) {
+    if (maiorNum === array[index]) {
+      repetNum += 1;
+    }
+  }
+  return repetNum;
 }
-
 console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 console.log(highestCount([0, 0, 0]));
