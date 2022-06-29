@@ -120,10 +120,19 @@ console.log(encode('H4w 1r2 yo5 tod1y?'));
 console.log(encode('Th3s is 1n 2nc4ding t2st'));
 console.log(encode('g4 Tryb2!'));
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(array, string) {
+  listaArray = array.sort();
+  let listaNova = [];
+  if(array.length === 0){
+return 'Vazio!';
+  }else {
+  for (let index in listaArray){
+   listaNova.push({tech: listaArray[index], name: string}); 
 }
-
+return listaNova;
+}
+}
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 module.exports = {
   calcArea,
   catAndMouse,
@@ -137,3 +146,4 @@ module.exports = {
   splitSentence,
   techList,
 };
+console.log();
