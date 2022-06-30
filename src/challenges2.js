@@ -4,10 +4,15 @@ function generatePhoneNumber() {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  let triangulo = true;
+  if (lineA < (lineB  + lineC) && lineA > (Math.abs(lineB - lineC))) {
+    return true;
+  } else {
+    return false;
+  }
 }
-
+console.log(triangleCheck(10, 14, 8));
 // Desafio 13
 function hydrate() {
   // seu código aqui
