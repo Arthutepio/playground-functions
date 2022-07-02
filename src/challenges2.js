@@ -1,5 +1,5 @@
 // Desafio 11
-function generatePhoneNumber2(array) {
+function generatePhoneNumber(array) {
  //verifica se o array tem 11 digitos
   if (array.length !== 11) {
     return 'Array com tamanho incorreto.';
@@ -22,11 +22,11 @@ function generatePhoneNumber2(array) {
   return '(' + array[0] + '' + array[1] + ')' + ' ' + array[2] + '' + array[3] + '' + array[4] + '' + array[5] + '' + array[6] + '-' + array[7] + '' + array[8] + '' + array[9] + '' + array[10] + '';
 
 }
-generatePhoneNumber2([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]);
+generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]);
 
 
 
-Desafio 12
+//Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
 
   if (lineA < (lineB  + lineC) && lineA > (Math.abs(lineB - lineC))) {
